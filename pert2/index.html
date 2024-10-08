@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuan2</title>
+</head>
+
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        th {
+            background-color: rgb(14, 50, 253);
+            color: rgb(255, 255, 255);
+        }
+
+        th,
+        td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #5882f8c7;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+
+        tr:hover {
+            background-color: #da6e0a;
+        }
+        form {
+            text-align: center;
+            position: relative;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px; 
+            font-size: 20px;
+            color: #1607e2;
+        }
+        input [type="submit"] {
+            padding: 5px 10px;
+            background-color: #31ff08;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+           
+
+        }
+        input [type="text"] {
+            padding: 5px 10px;
+            background-color: #ff9900af;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 25%;
+            height: 20px;
+
+        }
+       
+    </style>
+    <h1>Latihan Tabel</h1>
+    <table>
+        <tr>
+            <th rowspan="2" width="5%">No</th>
+            <th rowspan="2" width="15%">Nim</th>
+            <th rowspan="2" width="40%">Nama</th>
+            <th colspan="4" width="40%">Nilai</th>
+        </tr>
+        <tr>
+            <th>Presensi</th>
+            <th>Tugas</th>
+            <th>UTS</th>
+            <th>UAS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>12345</td>
+            <td>Andi</td>
+            <td>90</td>
+            <td>80</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>12346</td>
+            <td>Budi</td>
+            <td>80</td>
+            <td>90</td>
+            <td>80</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>12347</td>
+            <td>Caca</td>
+            <td>70</td>
+            <td>70</td>
+            <td>70</td>
+            <td>70</td>
+        </tr>
+        <tr>
+
+            <td>4</td>
+            <td>12348</td>
+            <td>Dodi</td>
+            <td>60</td>
+            <td>60</td>
+            <td>60</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>12349</td>
+            <td>Eka</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+    <h1>Contoh Semua Kontrol Form HTML Lengkap</h1>
+    <form action="#" method="post">
+        <label for="text-input">Input Teks:</label>
+        <input type="text" id="text-input" name="text-input" placeholder="Masukkan teks">
+        <br><br>
+        <label for="email-input">Input Email:</label>
+        <input type="email" id="email-input" name="email-input" placeholder="example@domain.com" required>
+        <br><br>
+        <label for="password-input">Input Password:</label>
+        <input type="password" id="password-input" name="password-input" required>
+        <br><br>
+        <label for="date-input">Input Tanggal:</label>
+        <input type="date" id="date-input" name="date-input">
+        <br><br>
+        <label for="time-input">Input Waktu:</label>
+        <input type="time" id="time-input" name="time-input">
+        <br><br>
+        <label for="datetime-input">Input Tanggal dan Waktu:</label>
+        <input type="datetime-local" id="datetime-input" name="datetime-input">
+        <br><br>
+        <label for="number-input">Input Nomor:</label>
+        <input type="number" id="number-input" name="number-input" min="1" max="100">
+        <br><br>
+        <label for="tel-input">Input Telepon:</label>
+        <input type="tel" id="tel-input" name="tel-input" placeholder="081234567890">
+        <br><br>
+        <label for="color-input">Pilih Warna:</label>
+        <input type="color" id="color-input" name="color-input">
+        <br><br>
+        <label for="font-input">Pilih Font:</label>
+        <select id="font-input" name="font-input">
+            <option value="arial">Arial</option>
+            <option value="verdana">Verdana</option>
+            <option value="times">Times New Roman</option>
+            <option value="courier">Courier New</option>
+        </select>
+        <br><br>
+        <label for="range-input">Input Rentang (1-100):</label>
+        <input type="range" id="range-input" nSame="range-input" min="1" max="100" value="50">
+        <br><br>
+        <p>Jenis Kelamin:</p>
+        <label>
+            <input type="radio" name="gender" value="laki-laki" required> Laki-laki
+        </label>
+        <label>
+            <input type="radio" name="gender" value="perempuan"> Perempuan
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" name="subscribe" value="yes"> Berlangganan
+            newsletter
+        </label>
+        <br><br>
+        <label for="select-input">Pilih Kota:</label>
+        <select id="select-input" name="select-input">
+            <option value="">Pilih Kota</option>
+            <option value="jakarta">Jakarta</option>
+
+            <option value="bandung">Bandung</option>
+            <option value="surabaya">Surabaya</option>
+        </select>
+        <br><br>
+        <label for="textarea-input">Pesan:</label>
+        <textarea id="textarea-input" name="textarea-input" rows="4" cols="50"
+            placeholder="Tulis pesan Anda di sini..."></textarea>
+        <br><br>
+        <label for="file-input">Unggah Foto:</label>
+        <input type="file" id="file-input" name="file-input" accept="image/*">
+        <br><br>
+        <label for="month-input">Input Bulan:</label>
+        <input type="month" id="month-input" name="month-input">
+        <br><br>
+        <label for="week-input">Input Minggu:</label>
+        <input type="week" id="week-input" name="week-input">
+        <br><br>
+        <label for="time-with-seconds-input">Input Waktu (dengan detik):</label>
+
+        <input type="time" id="time-with-seconds-input" name="time-with-seconds-
+input" step="1">
+        <br><br>
+        <input type="hidden" id="hidden-input" name="hidden-input" value="nilai-
+tersembunyi">
+        <br><br>
+        <label for="output-input">Output:</label>
+        <output id="output-input">Hasil akan ditampilkan di sini</output>
+        <br><br>
+        <label for="progress-input">Progress:</label>
+        <progress id="progress-input" value="50" max="100">50%</progress>
+        <br><br>
+
+        <input type="reset" value="Reset">
+        <br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+
+</html>
