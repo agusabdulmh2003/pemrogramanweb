@@ -1,0 +1,65 @@
+* {
+    font-size: large; 
+}
+
+.input-container {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th {
+    background-color: rgb(14, 50, 253);
+    color: rgb(255, 255, 255);
+}
+
+th,
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #5882f8c7;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.tabel-hover tr:hover {
+    background-color: #b12424; /* warna hover */
+  }
+
+input,
+select {
+    width: 150px; /* Mengatur lebar elemen input dan dropdown */
+    padding: 8px; /* Menambahkan padding di dalam elemen untuk ruang kosong */
+    border: 1px solid #ccc; /* Menambahkan border abu-abu terang pada input dan dropdown */
+    border-radius: 10%;
+}
+
+/* Mengatur tampilan tombol */
+button {
+    padding: 8px 16px; /* Menambahkan padding vertikal dan horizontal di dalam tombol */
+    border: none; /* Menghilangkan border default tombol */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat berada di atas tombol */
+    border-radius: 8px; /* Memberikan sudut yang membulat pada tombol */
+    background-color: #FF0000; /* Warna merah */
+    color: white; /* Teks putih */
+}
+
+.simpan-btn {
+    background-color: #007BFF; 
+    color: white; 
+}
+.reset-btn {
+    background-color: #FFD700;
+    color: black; /
+}

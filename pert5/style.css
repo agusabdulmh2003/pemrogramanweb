@@ -1,0 +1,95 @@
+/* Gaya umum untuk body */
+body {
+    background-color: #f8f9fa;
+    /* Warna latar belakang halaman */
+}
+
+/* Gaya untuk header */
+.header {
+    background-color: #007bff;
+    /* Warna latar belakang header */
+    color: white;
+    /* Warna teks di header */
+    padding: 20px 0;
+    /* Padding atas dan bawah */
+}
+
+/* Gaya untuk kartu informasi */
+.card {
+    border: none;
+    /* Menghilangkan border default */
+}
+
+/* Gaya untuk elemen testimoni */
+.testimonial {
+    background-color: #e9f1ff;
+    /* Warna latar belakang testimoni */
+
+    padding: 20px;
+    /* Padding di dalam testimoni */
+    border-radius: 8px;
+    /* Sudut membulat */
+}
+
+/* Gaya untuk gambar dalam galeri */
+.gallery img {
+    max-width: 100%;
+    /* Memastikan gambar tidak melebihi lebar kolom */
+    height: auto;
+    /* Tinggi otomatis agar proporsional */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Efek transisi */
+}
+
+/* Efek hover pada gambar galeri */
+.gallery img:hover {
+    transform: scale(1.05);
+    /* Memperbesar gambar saat hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Menambahkan bayangan */
+}
+
+/* Gaya untuk item layanan */
+.service-item {
+    transition: transform 0.2s;
+    /* Efek transisi pada item layanan */
+}
+
+/* Efek hover pada item layanan */
+.service-item:hover {
+    transform: scale(1.05);
+    /* Memperbesar item layanan saat hover */
+    background-color: #e9f1ff;
+    /* Warna latar belakang saat hover */
+    border-radius: 8px;
+    /* Sudut membulat saat hover */
+}
+
+/* Gaya untuk kontrol carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    color: red;
+    /* Mengatur warna kontrol menjadi merah */
+}
+
+/* Mengatur ikon kontrol */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(172, 249, 221);
+
+    /* Latar belakang ikon putih */
+    border-radius: 50%;
+    /* Membulatkan ikon */
+}
+
+/* Gaya untuk gambar tim */
+.team-member img {
+    transition: transform 0.2s;
+    /* Efek transisi pada gambar tim */
+}
+
+/* Efek hover pada gambar tim */
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
